@@ -1,0 +1,488 @@
+[
+    {
+        "Rule": "(?i)path.{10}",
+        "NoReplace": true,
+        "Color": "blue",
+        "EnableForResponse": true,
+        "EnableForBody": true,
+        "Index": 1,
+        "ExtraTag": [
+            "关键字"
+        ],
+        "VerboseName": "关键字path"
+    },
+    {
+        "Rule": "(?i)select.{10}",
+        "NoReplace": true,
+        "Color": "blue",
+        "EnableForResponse": true,
+        "EnableForBody": true,
+        "Index": 2,
+        "ExtraTag": [
+            "关键字"
+        ],
+        "VerboseName": "关键字select"
+    },
+    {
+        "Rule": "(.{7}(?i)key.{10})",
+        "NoReplace": true,
+        "Color": "blue",
+        "EnableForResponse": true,
+        "EnableForBody": true,
+        "Index": 3,
+        "ExtraTag": [
+            "关键字"
+        ],
+        "VerboseName": "关键字key"
+    },
+    {
+        "Rule": "(?i)config.{10}",
+        "NoReplace": true,
+        "Color": "blue",
+        "EnableForResponse": true,
+        "EnableForBody": true,
+        "Index": 4,
+        "ExtraTag": [
+            "关键字"
+        ],
+        "VerboseName": "关键字config"
+    },
+    {
+        "Rule": "(?i)phone",
+        "NoReplace": true,
+        "Color": "blue",
+        "EnableForResponse": true,
+        "EnableForBody": true,
+        "Index": 5,
+        "ExtraTag": [
+            "关键字"
+        ],
+        "VerboseName": "关键字phone"
+    },
+    {
+        "Rule": "[a-zA-Z0-9.-]+\\.baidu.com",
+        "NoReplace": true,
+        "Color": "blue",
+        "EnableForResponse": true,
+        "EnableForBody": true,
+        "Index": 6,
+        "ExtraTag": [
+            "子域名"
+        ],
+        "Disabled": true,
+        "VerboseName": "子域名（要自己修改）"
+    },
+    {
+        "Rule": "(?i)api.{7}",
+        "NoReplace": true,
+        "Color": "blue",
+        "EnableForResponse": true,
+        "EnableForHeader": true,
+        "EnableForBody": true,
+        "EnableForURI": true,
+        "Index": 7,
+        "ExtraTag": [
+            "api"
+        ],
+        "VerboseName": "api"
+    },
+    {
+        "Rule": "((127\\.0\\.0\\.1)|(localhost)|(10\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3})|(172\\.((1[6-9])|(2\\d)|(3[01]))\\.\\d{1,3}\\.\\d{1,3})|(192\\.168\\.\\d{1,3}\\.\\d{1,3}))",
+        "NoReplace": true,
+        "Color": "blue",
+        "EnableForResponse": true,
+        "EnableForHeader": true,
+        "EnableForBody": true,
+        "EnableForURI": true,
+        "Index": 8,
+        "ExtraTag": [
+            "IP"
+        ],
+        "VerboseName": "内网ip"
+    },
+    {
+        "Rule": "(((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?))",
+        "NoReplace": true,
+        "Color": "blue",
+        "EnableForResponse": true,
+        "EnableForHeader": true,
+        "EnableForBody": true,
+        "EnableForURI": true,
+        "Index": 9,
+        "ExtraTag": [
+            "IP"
+        ],
+        "VerboseName": "IP"
+    },
+    {
+        "Rule": "((?i)(https|http)://[-A-Za-z0-9+\u0026@#/%?=~_|!:,.;]+[-A-Za-z0-9+\u0026@#/%=~_|])",
+        "NoReplace": true,
+        "Color": "blue",
+        "EnableForResponse": true,
+        "EnableForHeader": true,
+        "EnableForBody": true,
+        "Index": 10,
+        "ExtraTag": [
+            "URL"
+        ],
+        "VerboseName": "url"
+    },
+    {
+        "Rule": "(ftp|file)://[-A-Za-z0-9+\u0026@#/%?=~_|!:,.;]+[-A-Za-z0-9+\u0026@#/%=~_|]",
+        "NoReplace": true,
+        "Color": "blue",
+        "EnableForResponse": true,
+        "EnableForBody": true,
+        "Index": 11,
+        "ExtraTag": [
+            "file"
+        ],
+        "VerboseName": "file"
+    },
+    {
+        "Rule": "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}",
+        "NoReplace": true,
+        "Color": "blue",
+        "EnableForResponse": true,
+        "EnableForBody": true,
+        "Index": 12,
+        "ExtraTag": [
+            "邮箱"
+        ],
+        "VerboseName": "邮箱"
+    },
+    {
+        "Rule": "(?i)upload.{7}",
+        "NoReplace": true,
+        "Color": "blue",
+        "EnableForResponse": true,
+        "EnableForBody": true,
+        "Index": 13,
+        "ExtraTag": [
+            "上传下载"
+        ],
+        "VerboseName": "上传下载"
+    },
+    {
+        "Rule": "(?i)download.{7}",
+        "NoReplace": true,
+        "Color": "blue",
+        "EnableForResponse": true,
+        "EnableForBody": true,
+        "Index": 14,
+        "ExtraTag": [
+            "上传下载"
+        ],
+        "VerboseName": "上传下载"
+    },
+    {
+        "Rule": "\\D1[3456789]\\d{9}\\D",
+        "NoReplace": true,
+        "Color": "purple",
+        "EnableForResponse": true,
+        "EnableForBody": true,
+        "Index": 15,
+        "ExtraTag": [
+            "手机号"
+        ],
+        "VerboseName": "手机号"
+    },
+    {
+        "Rule": "([1-9]\\d{5}(18|19|20)\\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\\d{3}[0-9Xx][^\\d])",
+        "NoReplace": true,
+        "Color": "purple",
+        "EnableForResponse": true,
+        "EnableForBody": true,
+        "Index": 16,
+        "ExtraTag": [
+            "身份证"
+        ],
+        "VerboseName": "身份证"
+    },
+    {
+        "Rule": "(((?i)nginx|(?i)tomcat|(?i)weblogic|(?i)apache|(?i)jboos|(?i)websphere|(?i)iis)[0-9.]+)",
+        "NoReplace": true,
+        "Color": "orange",
+        "EnableForResponse": true,
+        "EnableForHeader": true,
+        "EnableForBody": true,
+        "Index": 17,
+        "ExtraTag": [
+            "中间件"
+        ],
+        "VerboseName": "中间件版本"
+    },
+    {
+        "Rule": "((Access-Control-Allow-Method)s.*((DELETE)|(SEARCH)|(COPY)|(MOVE)|(PROPFIND)|(PROPPATCH)|(MKCOL)|(LOCK)|(UNLOCK)|(PUT)|(OPTIONS)|(TRACE)|(TRACK)|(HEAD)))",
+        "NoReplace": true,
+        "Color": "orange",
+        "EnableForResponse": true,
+        "EnableForHeader": true,
+        "Index": 18,
+        "ExtraTag": [
+            "低危"
+        ],
+        "VerboseName": "低危"
+    },
+    {
+        "Rule": "((.{3}(?i)AccessKey.{10})|(.{3}(?i)Access Key.{10}))",
+        "NoReplace": true,
+        "Color": "yellow",
+        "EnableForRequest": true,
+        "EnableForResponse": true,
+        "EnableForHeader": true,
+        "EnableForBody": true,
+        "EnableForURI": true,
+        "Index": 19,
+        "ExtraTag": [
+            "Access Key"
+        ],
+        "VerboseName": "Access Key"
+    },
+    {
+        "Rule": "(?i)(file=|filename=|path=|download=|upload=|fileid=|file_id=|url=|uri=|redirect=|forword=)",
+        "NoReplace": true,
+        "Color": "green",
+        "EnableForRequest": true,
+        "EnableForResponse": true,
+        "EnableForURI": true,
+        "Index": 20,
+        "ExtraTag": [
+            "路径参数"
+        ],
+        "VerboseName": "路径类敏感参数"
+    },
+    {
+        "Rule": "(?i)(select|order by|insert|where|update)",
+        "NoReplace": true,
+        "Color": "green",
+        "EnableForRequest": true,
+        "EnableForResponse": true,
+        "EnableForURI": true,
+        "Index": 21,
+        "ExtraTag": [
+            "sql参数"
+        ],
+        "VerboseName": "sql参数（GET）"
+    },
+    {
+        "Rule": "power by",
+        "NoReplace": true,
+        "Color": "green",
+        "EnableForResponse": true,
+        "EnableForBody": true,
+        "Index": 22,
+        "ExtraTag": [
+            "power by信息"
+        ],
+        "VerboseName": "powerby信息"
+    },
+    {
+        "Rule": "((.{3}(?i)secretKey.{10})|(.{3}(?i)Secret Key.{10}))",
+        "NoReplace": true,
+        "Color": "red",
+        "EnableForRequest": true,
+        "EnableForResponse": true,
+        "EnableForHeader": true,
+        "EnableForBody": true,
+        "EnableForURI": true,
+        "Index": 23,
+        "ExtraTag": [
+            "Secret Key"
+        ],
+        "VerboseName": "Secret Key"
+    },
+    {
+        "Rule": "HTTP",
+        "EnableForRequest": true,
+        "EnableForHeader": true,
+        "Index": 24,
+        "Disabled": true,
+        "VerboseName": "权限绕过",
+        "ExtraHeaders": [
+            {
+                "Header": "Client-IP",
+                "Value": "127.0.0.1"
+            },
+            {
+                "Header": "Forwarded-For-Ip",
+                "Value": "127.0.0.1"
+            },
+            {
+                "Header": "Forwarded-For",
+                "Value": "127.0.0.1"
+            },
+            {
+                "Header": "Forwarded",
+                "Value": "127.0.0.1"
+            },
+            {
+                "Header": "True-Client-IP",
+                "Value": "127.0.0.1"
+            },
+            {
+                "Header": "X-Client-IP",
+                "Value": "127.0.0.1"
+            },
+            {
+                "Header": "X-Custom-IP-Authorization",
+                "Value": "127.0.0.1"
+            },
+            {
+                "Header": "X-Forward-For",
+                "Value": "127.0.0.1"
+            },
+            {
+                "Header": "X-Forward",
+                "Value": "127.0.0.1"
+            },
+            {
+                "Header": "X-Forwarded-By",
+                "Value": "127.0.0.1"
+            },
+            {
+                "Header": "X-Forwarded-For-Original",
+                "Value": "127.0.0.1"
+            },
+            {
+                "Header": "X-Forwarded-For",
+                "Value": "127.0.0.1"
+            },
+            {
+                "Header": "X-Forwarded-Server",
+                "Value": "127.0.0.1"
+            },
+            {
+                "Header": "X-Forwarded",
+                "Value": "127.0.0.1"
+            },
+            {
+                "Header": "X-Forwared-Host",
+                "Value": "127.0.0.1"
+            },
+            {
+                "Header": "X-Host",
+                "Value": "127.0.0.1"
+            },
+            {
+                "Header": "X-HTTP-Host-Override",
+                "Value": "127.0.0.1"
+            },
+            {
+                "Header": "X-Originating-IP",
+                "Value": "127.0.0.1"
+            },
+            {
+                "Header": "X-Real-IP",
+                "Value": "127.0.0.1"
+            },
+            {
+                "Header": "X-Remote-Addr",
+                "Value": "127.0.0.1"
+            },
+            {
+                "Header": "X-Remote-IP",
+                "Value": "127.0.0.1"
+            },
+            {
+                "Header": "X-Original-URL",
+                "Value": "/admin"
+            },
+            {
+                "Header": "X-Override-URL",
+                "Value": "/admin"
+            },
+            {
+                "Header": "X-Rewrite-URL",
+                "Value": "/admin"
+            },
+            {
+                "Header": "Referer",
+                "Value": "/admin"
+            }
+        ]
+    },
+    {
+        "Rule": "HTTP",
+        "EnableForRequest": true,
+        "EnableForHeader": true,
+        "Index": 25,
+        "Disabled": true,
+        "VerboseName": "log4j头部检测（自行修改dnslog）",
+        "ExtraHeaders": [
+            {
+                "Header": "User-Agent",
+                "Value": "${jndi:dns://dnslog}"
+            },
+            {
+                "Header": "X-Forwarded-For",
+                "Value": "${jndi:dns://dnslog}"
+            },
+            {
+                "Header": "From",
+                "Value": "${jndi:dns://dnslog}"
+            },
+            {
+                "Header": "Origin",
+                "Value": "${jndi:dns://dnslog}"
+            }
+        ],
+        "ExtraRepeat": true
+    },
+    {
+        "Rule": "HTTP",
+        "EnableForRequest": true,
+        "EnableForHeader": true,
+        "Index": 26,
+        "Disabled": true,
+        "VerboseName": "替换UA（自行修改UA）",
+        "ExtraHeaders": [
+            {
+                "Header": "User-Agent",
+                "Value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0 I am white hat Security"
+            }
+        ]
+    },
+    {
+        "Rule": "(?i)hint",
+        "NoReplace": true,
+        "Color": "purple",
+        "EnableForResponse": true,
+        "EnableForHeader": true,
+        "EnableForBody": true,
+        "Index": 27,
+        "ExtraTag": [
+            "hint"
+        ],
+        "Disabled": true,
+        "VerboseName": "hint"
+    },
+    {
+        "Rule": "href=",
+        "NoReplace": true,
+        "Color": "purple",
+        "EnableForResponse": true,
+        "EnableForHeader": true,
+        "EnableForBody": true,
+        "Index": 28,
+        "ExtraTag": [
+            "A标签"
+        ],
+        "Disabled": true,
+        "VerboseName": "A标签"
+    },
+    {
+        "Rule": "(?i)flag{",
+        "NoReplace": true,
+        "Color": "purple",
+        "EnableForResponse": true,
+        "EnableForHeader": true,
+        "EnableForBody": true,
+        "Index": 29,
+        "ExtraTag": [
+            "flag"
+        ],
+        "Disabled": true,
+        "VerboseName": "flag"
+    }
+]
